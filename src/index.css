@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-corporate-dark: #002B49;
+  --color-corporate-accent: #00A88F;
+  --color-corporate-orange: #FF7A00;
+  --color-corporate-bg: #F8FAFC;
+}
+
+html {
+  scroll-behavior: smooth;
+}
