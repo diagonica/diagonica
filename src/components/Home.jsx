@@ -26,7 +26,7 @@ export default function Home({ navigateTo }) {
     setErrorMessage('');
 
     try {
-      const response = await fetch('http://localhost:5000/api/proposals', {
+      const response = await fetch('https://api.diagonica.com/api/proposals', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

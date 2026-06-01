@@ -26,7 +26,7 @@ export default function GriphillDashboard() {
 
     const fetchGriphillRecords = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/griphill', {
+        const response = await fetch('https://api.diagonica.com/api/griphill', {
           headers: {
             'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json'
@@ -64,7 +64,7 @@ export default function GriphillDashboard() {
     const remarksText = localRemarks[id] || '';
 
     try {
-      const response = await fetch(`http://localhost:5000/api/griphill/${id}/status`, {
+      const response = await fetch(`https://api.diagonica.com/api/griphill/${id}/status`, {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`,
